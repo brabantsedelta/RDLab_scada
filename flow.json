@@ -16,5 +16,59 @@
         "x": 180,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "7f2e758ae3734aec",
+        "type": "split",
+        "z": "8ec3a2af1ea64eba",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7977661b6f0be590",
+        "type": "csv",
+        "z": "8ec3a2af1ea64eba",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 530,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7585f7cc76b07068",
+        "type": "html",
+        "z": "8ec3a2af1ea64eba",
+        "name": "",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "",
+        "ret": "html",
+        "as": "single",
+        "x": 470,
+        "y": 600,
+        "wires": [
+            []
+        ]
     }
 ]

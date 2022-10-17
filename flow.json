@@ -13,8 +13,8 @@
         "z": "8ec3a2af1ea64eba",
         "name": "",
         "info": "test 2 3\n\nTest 4\n\nTest 5 - FTP 3",
-        "x": 280,
-        "y": 180,
+        "x": 380,
+        "y": 200,
         "wires": []
     },
     {

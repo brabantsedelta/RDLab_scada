@@ -65,13 +65,13 @@
             }
         ],
         "repeat": "",
-        "crontab": "",
+        "crontab": "*/10 0 * * *",
         "once": false,
         "onceDelay": "",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
+        "x": 150,
         "y": 100,
         "wires": [
             [

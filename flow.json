@@ -18,7 +18,7 @@
     {
         "id": "2666ccc076528a93",
         "type": "tab",
-        "label": "Flow 3",
+        "label": "WINCC test",
         "disabled": false,
         "info": "",
         "env": []
@@ -406,15 +406,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "4c0ebd412cbbb8f5",
-        "type": "comment",
-        "z": "2666ccc076528a93",
-        "name": "",
-        "info": "",
-        "x": 640,
-        "y": 140,
-        "wires": []
     }
 ]

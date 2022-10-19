@@ -104,7 +104,7 @@
         "z": "8ec3a2af1ea64eba",
         "influxdb": "5d7e54ca.019d44",
         "name": "wsbd",
-        "measurement": "",
+        "measurement": "test",
         "precision": "ms",
         "retentionPolicy": "",
         "database": "test",

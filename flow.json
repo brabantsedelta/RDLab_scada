@@ -269,7 +269,7 @@
                 "transformType": "rotate",
                 "fromValue": "0,300,390",
                 "toValue": "360,300,390",
-                "trigger": "msg",
+                "trigger": "time",
                 "duration": "10",
                 "durationUnit": "s",
                 "repeatCount": "0",

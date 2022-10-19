@@ -2,7 +2,7 @@
     {
         "id": "8ec3a2af1ea64eba",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "InfluxDB",
         "disabled": false,
         "info": "",
         "env": []
@@ -24,68 +24,86 @@
         "env": []
     },
     {
-        "id": "351a7fe1fa2da6c4",
-        "type": "comment",
+        "id": "5d7e54ca.019d44",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "d50d0c9f.31e858",
+        "influxdbVersion": "2.0",
+        "url": "https://localhost:9999",
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "d50d0c9f.31e858",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "a67139c7.15ec68",
+        "type": "inject",
         "z": "8ec3a2af1ea64eba",
         "name": "",
-        "info": "test 2 3\n\nTest 4\n\nTest 5 - FTP 3",
-        "x": 720,
-        "y": 220,
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "15047e0e.e613f2"
+            ]
+        ]
+    },
+    {
+        "id": "15047e0e.e613f2",
+        "type": "function",
+        "z": "8ec3a2af1ea64eba",
+        "name": "multiple readings",
+        "func": "msg.payload = [\n    [{\n        numValue: 10,\n        randomValue: Math.random()*10,\n        strValue: \"message1\",\n        time: new Date().getTime()-1\n    },\n    {\n        tag1:\"sensor1\",\n        tag2:\"device2\"\n    }],\n    [{\n        numValue: 20,\n        randomValue: Math.random()*10,\n        strValue: \"message2\",\n        time: new Date().getTime()\n    },\n    {\n        tag1:\"sensor1\",\n        tag2:\"device2\"\n    }]\n];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "8caaee80.33352"
+            ]
+        ]
+    },
+    {
+        "id": "8caaee80.33352",
+        "type": "influxdb out",
+        "z": "8ec3a2af1ea64eba",
+        "influxdb": "5d7e54ca.019d44",
+        "name": "",
+        "measurement": "test",
+        "precision": "ms",
+        "retentionPolicy": "",
+        "database": "test",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "my-org",
+        "bucket": "test",
+        "x": 610,
+        "y": 100,
         "wires": []
-    },
-    {
-        "id": "7f2e758ae3734aec",
-        "type": "split",
-        "z": "8ec3a2af1ea64eba",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 370,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7977661b6f0be590",
-        "type": "csv",
-        "z": "8ec3a2af1ea64eba",
-        "name": "",
-        "sep": ",",
-        "hdrin": "",
-        "hdrout": "none",
-        "multi": "one",
-        "ret": "\\n",
-        "temp": "",
-        "skip": "0",
-        "strings": true,
-        "include_empty_strings": "",
-        "include_null_values": "",
-        "x": 530,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7585f7cc76b07068",
-        "type": "html",
-        "z": "8ec3a2af1ea64eba",
-        "name": "",
-        "property": "payload",
-        "outproperty": "payload",
-        "tag": "",
-        "ret": "html",
-        "as": "single",
-        "x": 470,
-        "y": 600,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "3854934e45212705",

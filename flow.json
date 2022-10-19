@@ -55,9 +55,19 @@
         "type": "inject",
         "z": "8ec3a2af1ea64eba",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
+        "onceDelay": "",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -79,6 +89,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 340,
         "y": 100,
         "wires": [

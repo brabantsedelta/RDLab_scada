@@ -342,7 +342,7 @@
         "doubleClickZoomEnabled": false,
         "mouseWheelZoomEnabled": false,
         "dblClickZoomPercentage": 150,
-        "cssString": "div.ui-svg svg{\n    color: var(--nr-dashboard-widgetColor);\n    fill: currentColor !important;\n}\ndiv.ui-svg path {\n    fill: inherit !important;\n}\ncircle {\n  fill: red;\n}\n\n",
+        "cssString": "div.ui-svg svg{\n    color: var(--nr-dashboard-widgetColor);\n    fill: currentColor !important;\n}\ndiv.ui-svg path {\n    fill: inherit !important;\n}\ncircle {\n  fill: rgb(123, 136, 222);\n}\n\n",
         "name": "",
         "x": 660,
         "y": 240,

@@ -269,23 +269,6 @@
         ]
     },
     {
-        "id": "b348ed106fcade25",
-        "type": "ui_text",
-        "z": "fd060deed22ba85d",
-        "group": "49273fa7f56bfd23",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Test",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 630,
-        "y": 120,
-        "wires": []
-    },
-    {
         "id": "12aaa7d977e7b617",
         "type": "inject",
         "z": "fd060deed22ba85d",
@@ -309,9 +292,7 @@
         "x": 260,
         "y": 120,
         "wires": [
-            [
-                "b348ed106fcade25"
-            ]
+            []
         ]
     },
     {

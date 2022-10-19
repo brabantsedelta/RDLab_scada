@@ -10,7 +10,7 @@
     {
         "id": "fd060deed22ba85d",
         "type": "tab",
-        "label": "Flow 2",
+        "label": "Scada test",
         "disabled": false,
         "info": "",
         "env": []
@@ -114,16 +114,6 @@
         "bucket": "Demo",
         "x": 530,
         "y": 100,
-        "wires": []
-    },
-    {
-        "id": "3854934e45212705",
-        "type": "comment",
-        "z": "fd060deed22ba85d",
-        "name": "",
-        "info": "Comment 1",
-        "x": 140,
-        "y": 180,
         "wires": []
     },
     {

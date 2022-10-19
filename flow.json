@@ -266,7 +266,7 @@
                 "targetId": "pump",
                 "classValue": "",
                 "attributeName": "transform",
-                "transformType": "rotate",
+                "transformType": "scale",
                 "fromValue": "0",
                 "toValue": "360",
                 "trigger": "msg",

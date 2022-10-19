@@ -267,12 +267,12 @@
                 "classValue": "",
                 "attributeName": "transform",
                 "transformType": "rotate",
-                "fromValue": "0,300,390",
-                "toValue": "360,300,390",
+                "fromValue": "0",
+                "toValue": "360",
                 "trigger": "msg",
                 "duration": "10",
                 "durationUnit": "s",
-                "repeatCount": "0",
+                "repeatCount": "3",
                 "end": "restore",
                 "delay": "1",
                 "delayUnit": "s",
@@ -298,8 +298,8 @@
         "dblClickZoomPercentage": 150,
         "cssString": "div.ui-svg svg{\n    color: var(--nr-dashboard-widgetColor);\n    fill: currentColor !important;\n}\ndiv.ui-svg path {\n    fill: inherit;\n}",
         "name": "Pump1",
-        "x": 640,
-        "y": 180,
+        "x": 520,
+        "y": 120,
         "wires": [
             []
         ]

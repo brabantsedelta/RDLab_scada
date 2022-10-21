@@ -246,8 +246,8 @@
         "retentionPolicyV18Flux": "",
         "org": "wsbd",
         "bucket": "Demo",
-        "x": 530,
-        "y": 200,
+        "x": 630,
+        "y": 260,
         "wires": []
     },
     {
